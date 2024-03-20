@@ -328,7 +328,7 @@ ADMIN_MSP_DIR=$WORKSHOP_CRYPTO/enrollments/${ORG}/users/rcaadmin/msp
 USER_MSP_DIR=$WORKSHOP_CRYPTO/enrollments/${ORG}/users/${USERNAME}/msp
 PEER_MSP_DIR=$WORKSHOP_CRYPTO/channel-msp/peerOrganizations/${ORG}/msp
 
-fabric-ca-client  register \
+-client  register \
   --id.name       $USERNAME \
   --id.secret     $PASSWORD \
   --id.type       client \

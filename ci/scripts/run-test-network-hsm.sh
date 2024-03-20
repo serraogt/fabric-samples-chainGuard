@@ -55,7 +55,7 @@ print "Initializing Typescript HSM Gateway application"
 export CHAINCODE_NAME=ts_hsm_gateway
 deployChaincode
 echo 'Delete fabric-ca-client from samples bin'
-rm ../bin/fabric-ca-client
+rm ../bin/-client
 echo 'go install pkcs11 enabled fabric-ca-client'
 GOBIN=${PWD}/../bin go install -tags pkcs11 github.com/hyperledger/fabric-ca/cmd/fabric-ca-client@latest
 fabric-ca-client version
